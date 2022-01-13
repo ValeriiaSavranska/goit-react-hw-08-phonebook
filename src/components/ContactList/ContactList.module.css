@@ -1,0 +1,30 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding-bottom: 20px;
+}
+
+.item::before {
+  content: '🧡';
+  padding-right: 10px;
+}
+
+.item {
+  display: flex;
+}
+
+.text {
+  display: inline-block;
+  margin-right: auto;
+  font-style: italic;
+}
+
+.btn {
+  margin-left: 10px;
+  padding: 10px;
+  background-color: rgb(248, 214, 182);
+  border: none;
+  border-radius: 10px;
+}

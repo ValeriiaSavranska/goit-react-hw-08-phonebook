@@ -1,0 +1,9 @@
+.wrapper {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  background-image: url(../../images/phonebook.png);
+  background-size: 800px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,19 @@
+.container {
+  max-width: 600px;
+  padding: 40px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 211, 101);
+  border-radius: 20px;
+}
+
+.title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.noCities {
+  padding-bottom: 20px;
+}
