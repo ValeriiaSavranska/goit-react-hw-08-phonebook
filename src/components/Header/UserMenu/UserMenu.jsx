@@ -9,7 +9,7 @@ const UserMenu = () => {
   const dispatch = useDispatch();
 
   return (
-    <div>
+    <div className={styles.wrapper}>
       <span className={styles.text}>Welcome, {userName}</span>
       <button
         className={styles.btn}
