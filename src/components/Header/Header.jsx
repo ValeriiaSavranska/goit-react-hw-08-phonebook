@@ -11,10 +11,20 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <NavLink exact to="/" className={styles.link}>
+        <NavLink
+          exact
+          to="/"
+          className={styles.link}
+          activeClassName={styles.active}
+        >
           Home
         </NavLink>
-        <NavLink exact to="/contacts" className={styles.link}>
+        <NavLink
+          exact
+          to="/contacts"
+          className={styles.link}
+          activeClassName={styles.active}
+        >
           Contacts
         </NavLink>
       </nav>

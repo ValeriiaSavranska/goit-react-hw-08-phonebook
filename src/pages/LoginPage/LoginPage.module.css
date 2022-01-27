@@ -1,0 +1,39 @@
+.wrapper {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  padding-top: 40px;
+
+  background-image: url(../../images/open-book-2.png);
+  background-size: cover;
+  background-position: 0px 100px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+
+.input {
+  display: block;
+  width: 300px;
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.btn {
+  width: 250px;
+  margin-top: 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 31, 31);
+  font-size: 20px;
+}

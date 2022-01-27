@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { register } from '../../redux/auth/authOperations';
-// import styles from './RegisterPage.module.css';
+import styles from './RegisterPage.module.css';
 
 const RegisterPage = () => {
   const [name, setName] = useState('');
@@ -27,7 +27,6 @@ const RegisterPage = () => {
   const handleSubmit = e => {
     e.preventDefault();
     const credentials = { name, email, password };
-    console.log(credentials);
     dispatch(register(credentials));
     reset();
   };
@@ -39,34 +38,44 @@ const RegisterPage = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <label>
+    <div className={styles.wrapper}>
+      <form onSubmit={handleSubmit} className={styles.form}>
+        <label className={styles.label}>
           Name
-          <input type="name" name="name" value={name} onChange={handleChange} />
+          <input
+            type="name"
+            name="name"
+            value={name}
+            onChange={handleChange}
+            className={styles.input}
+          />
         </label>
 
-        <label>
+        <label className={styles.label}>
           Email
           <input
             type="email"
             name="email"
             value={email}
             onChange={handleChange}
+            className={styles.input}
           />
         </label>
 
-        <label>
+        <label className={styles.label}>
           Password
           <input
             type="password"
             name="password"
             value={password}
             onChange={handleChange}
+            className={styles.input}
           />
         </label>
 
-        <button type="submit">Sing up</button>
+        <button type="submit" className={styles.btn}>
+          Sing up
+        </button>
       </form>
     </div>
   );

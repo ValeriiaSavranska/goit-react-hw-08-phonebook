@@ -7,7 +7,7 @@ const AuthNav = () => (
       to="/register"
       exact
       className={styles.link}
-      // activeStyle={styles.activeLink}
+      activeClassName={styles.active}
     >
       Register
     </NavLink>
@@ -15,7 +15,7 @@ const AuthNav = () => (
       to="/login"
       exact
       className={styles.link}
-      // activeStyle={styles.activeLink}
+      activeClassName={styles.active}
     >
       Login
     </NavLink>
